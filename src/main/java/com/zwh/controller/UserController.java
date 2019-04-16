@@ -20,6 +20,7 @@ public class UserController {
         try {
             subject.login(token);
             System.out.println("登陆成功");
+            System.out.println("远程库上的修改");
             return "index";
         } catch (AuthenticationException e) {
             e.printStackTrace();

@@ -28,4 +28,10 @@ public class UserController {
             return "login";
         }
     }
+    @RequestMapping("loginOut")
+    public String loginout(){
+        Subject subject = SecurityUtils.getSubject();
+        subject.logout();
+        return "redirect:/index.jsp";
+    }
 }

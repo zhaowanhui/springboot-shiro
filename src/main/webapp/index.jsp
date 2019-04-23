@@ -4,6 +4,7 @@
     String s = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
     out.print(path);
     out.print(s);
+
 %>
 <html>
 <body>

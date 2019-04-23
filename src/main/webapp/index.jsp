@@ -2,6 +2,7 @@
 <%@taglib prefix="shiro" uri="http://shiro.apache.org/tags" %>
 <% String path = request.getContextPath();
     String s = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
+    out.print(path);
     out.print(s);
 %>
 <html>
